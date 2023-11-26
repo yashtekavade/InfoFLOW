@@ -7,7 +7,7 @@ import saved from "./assets/bookmark.svg";
 import login from "./assets/logout-svgrepo-com.svg";
 import sendBtn from "./assets/send.svg";
 import userIcon from "./assets/user-icon.png";
-import gptImgLogo from "./assets/chatgptLogo.svg";
+import gptImgLogo from "./assets/tailwind-logo.png";
 
 function App() {
   return (
@@ -50,22 +50,37 @@ function App() {
       </div>
       <div className="main">
         <div className="chats">
-          <div className="chat">
-            <img src={userIcon} alt="" />
+          <div className="chat user">
+            <img className="chatImg" src={userIcon} alt="" />
             <p className="txt">lorem ipsum dolor sit amet, consectetur</p>
           </div>
-          <div className="chat">
-            <img src={gptImgLogo} alt="" />
-            <p className="txt">lorem ipsum dolor sit amet, consectetur</p>
+          <div className="chat bot">
+            <img className="chatImg" src={gptImgLogo} alt="" />
+            <p className="txt">
+              lorem ipsum dolor sit amet, consectetur lorem templorem ipsum
+              dolor sit amet, consectetur lorem templorem ipsum dolor sit amet,
+              consectetur lorem templorem ipsum dolor sit amet, consectetur
+              lorem templorem ipsum dolor sit amet, consectetur lorem templorem
+              ipsum dolor sit amet, consectetur lorem templorem ipsum dolor sit
+              amet, consectetur lorem templorem ipsum dolor sit amet,
+              consectetur lorem templorem ipsum dolor sit amet, consectetur
+              lorem templorem ipsum dolor sit amet, consectetur lorem templorem
+              ipsum dolor sit amet, consectetur lorem templorem ipsum dolor sit
+              amet, consectetur lorem templorem ipsum dolor sit amet,
+              consectetur lorem templorem
+            </p>
           </div>
         </div>
         <div className="chatFooter">
           <div className="inp">
-            <input type="text" placeholder="Send a message" />
+            <input type="text" placeholder="Message infoFLOW..." />
             <button className="send">
-              <img src={sendBtn} alt="Send" className="" />
+              <img src={sendBtn} alt="Send" className="sendBtn" />
             </button>
           </div>
+          <p className="txt">
+            infoFLOW can make mistakes. Consider checking important information.
+          </p>
         </div>
       </div>
     </div>

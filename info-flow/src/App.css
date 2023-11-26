@@ -132,6 +132,38 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 6rem 10rem;
+  margin-bottom: 0;
+}
+
+.chats {
+  overflow: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh - 17rem);
+}
+
+.chat {
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.chatImg {
+  object-fit: cover;
+  width: 3.5rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+}
+
+.bot {
+  background: rgba(28, 30, 58, 1);
+  width: fit-content;
+  border-radius: 0.5rem;
 }
 
 .chatFooter {
@@ -140,7 +172,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-left: 0px;
 }
 
 .inp {
@@ -148,8 +180,14 @@ body {
   background: rgba(28, 30, 58, 1);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-radius: 0.5rem;
-  width: 70rem;
+  width: 100rem;
+}
+
+.sendBtn {
+  max-width: 20px; /* Adjust the max-width of the image */
+  margin-right: 5px; /* Add some right margin for spacing between image and text */
 }
 
 .inp > input {
@@ -163,4 +201,8 @@ body {
 .send {
   background: transparent;
   border: none;
+}
+
+.chatFooter > p {
+  margin: 2rem 0;
 }
