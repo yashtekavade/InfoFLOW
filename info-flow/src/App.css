@@ -21,7 +21,7 @@ body {
 
 .Sidebar {
   background-color: #141432;
-  width: 250px;
+  width: 300px;
   height: 100vh;
   padding: 20px;
   display: flex;
@@ -50,6 +50,7 @@ body {
   font-weight: bold;
   font-size: 2rem; /* Adjust the font size as needed */
   margin-top: 10px; /* Add margin for spacing */
+  margin-bottom: 20px; /* Add margin between "infoFLOW" and the button */
 }
 
 .midBtn {
@@ -75,14 +76,21 @@ body {
 }
 
 .query {
-  margin-top: 10px;
   display: flex;
   align-items: center;
-  color: white;
-  background-color: #1f1f46;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
+  background: transparent;
+  color: rgba(222, 222, 222, 1);
+  padding: 1.5rem;
+  width: 25rem;
+  margin: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(98, 98, 98, 1);
+}
+
+.query > img {
+  margin-right: 2rem;
+  object-fit: cover;
+  height: 1.75rem;
 }
 
 .listItems {
