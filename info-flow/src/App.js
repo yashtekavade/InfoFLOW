@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import gpt from "./assets/tailwind-logo.png";
+import addBtn from "./assets/add-30.png";
+import msgIcon from "./assets/message.svg";
+import home from "./assets/home.svg";
+import saved from "./assets/bookmark.svg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Sidebar">
+        <div className="upperSide">
+          <div className="upperSideTop">
+            <img src={gpt} alt="new chat" className="logo" />
+            <span className="brand">infoFLOW</span>
+            <button className="midBtn">
+              <img src={addBtn} alt="" className="addBtn" />
+              New Chat
+            </button>
+            <div className="upperSideBottom">
+              <button className="query">
+                <img src={msgIcon} alt="Query" />
+                What is Programming?
+              </button>
+              <button className="query">
+                <img src={msgIcon} alt="Query" />
+                How to use API?
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="lowerSide">
+          <div className="listItems">
+            <img src={home} alt="" className="listItemsImg" />
+            Home
+          </div>
+          <div className="listItems">
+            <img src={saved} alt="" className="listItemsImg" />
+            Saved
+          </div>
+        </div>
+      </div>
+      <div className="main"></div>
     </div>
   );
 }
