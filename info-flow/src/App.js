@@ -4,6 +4,7 @@ import addBtn from "./assets/add-30.png";
 import msgIcon from "./assets/message.svg";
 import home from "./assets/home.svg";
 import saved from "./assets/bookmark.svg";
+import login from "./assets/logout-svgrepo-com.svg";
 
 function App() {
   return (
@@ -37,6 +38,10 @@ function App() {
           <div className="listItems">
             <img src={saved} alt="" className="listItemsImg" />
             Saved
+          </div>
+          <div className="listItems">
+            <img src={login} alt="" className="listItemsImg" />
+            LogOut
           </div>
         </div>
       </div>

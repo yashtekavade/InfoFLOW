@@ -39,7 +39,7 @@ body {
 }
 
 .logo {
-  width: 65px; /* Adjust the width as needed to reduce the size */
+  width: 75px; /* Adjust the width as needed to reduce the size */
   height: auto; /* Maintain aspect ratio */
   display: block;
   margin: 0 auto; /* Center the logo */
@@ -94,13 +94,38 @@ body {
   height: 1.75rem;
 }
 
+.lowerSide {
+  border-top: 2px solid #716d6d; /* Add a black division line */
+  padding-top: 10px; /* Add some padding above the line for spacing */
+  margin-top: 180px; /* Add margin above the line for spacing */
+  padding: 2rem;
+}
+
 .listItems {
+  margin: 0.75rem;
   display: flex;
   align-items: center;
   margin-top: 10px;
+  font-size: 1.3rem;
   color: white;
 }
 
+.listItemsImg {
+  margin: 0.75rem;
+  padding-right: 1.2rem;
+}
+
+.listItems:nth-child(1) > .listItemsImg {
+  margin-right: 0.6rem;
+}
+
+.listItems:nth-child(2) > .listItemsImg {
+  margin-right: 1rem;
+}
+
+.listItems:nth-child(3) > .listItemsImg {
+  margin-right: 0.1rem;
+}
 .main {
   flex: 1;
 }
