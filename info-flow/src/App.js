@@ -52,22 +52,14 @@ function App() {
         <div className="chats">
           <div className="chat user">
             <img className="chatImg" src={userIcon} alt="" />
-            <p className="txt">lorem ipsum dolor sit amet, consectetur</p>
+            <p className="txt">What is MERN</p>
           </div>
           <div className="chat bot">
             <img className="chatImg" src={gptImgLogo} alt="" />
             <p className="txt">
-              lorem ipsum dolor sit amet, consectetur lorem templorem ipsum
-              dolor sit amet, consectetur lorem templorem ipsum dolor sit amet,
-              consectetur lorem templorem ipsum dolor sit amet, consectetur
-              lorem templorem ipsum dolor sit amet, consectetur lorem templorem
-              ipsum dolor sit amet, consectetur lorem templorem ipsum dolor sit
-              amet, consectetur lorem templorem ipsum dolor sit amet,
-              consectetur lorem templorem ipsum dolor sit amet, consectetur
-              lorem templorem ipsum dolor sit amet, consectetur lorem templorem
-              ipsum dolor sit amet, consectetur lorem templorem ipsum dolor sit
-              amet, consectetur lorem templorem ipsum dolor sit amet,
-              consectetur lorem templorem
+              MERN is an acronym that represents a full-stack web development
+              stack, combining four key technologies: MongoDB, Express.js,
+              React, and Node.js.
             </p>
           </div>
         </div>
